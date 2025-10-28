@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 200 18% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 200 18% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 18% 20%;
+
+    --primary: 200 18% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 4 90% 58%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 200 12% 95%;
+    --muted-foreground: 200 10% 45%;
+
+    --accent: 200 18% 46%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 200 12% 88%;
+    --input: 200 12% 92%;
+    --ring: 200 18% 46%;
+
+    --radius: 0.5rem;
+    
+    --header-bg: 200 20% 42%;
+    --nav-hover: 200 25% 35%;
+    --badge-bg: 4 90% 58%;
+    --product-hover: 0 0% 96%;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 200 18% 12%;
+    --foreground: 0 0% 95%;
+
+    --card: 200 18% 15%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 200 18% 15%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 200 18% 60%;
+    --primary-foreground: 200 18% 10%;
+
+    --secondary: 4 85% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 200 15% 20%;
+    --muted-foreground: 200 10% 65%;
+
+    --accent: 200 18% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 200 15% 25%;
+    --input: 200 15% 25%;
+    --ring: 200 18% 60%;
+    
+    --header-bg: 200 20% 18%;
+    --nav-hover: 200 25% 25%;
+    --badge-bg: 4 85% 60%;
+    --product-hover: 200 15% 18%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
